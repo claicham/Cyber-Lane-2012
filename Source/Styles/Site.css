@@ -1,0 +1,131 @@
+html,body{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+@font-face {
+    font-family: 'FortisSSiRegular';
+    src: url('Fonts/fortis_ssi-webfont.eot');
+    src: url('Fonts/fortis_ssi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/fortis_ssi-webfont.woff') format('woff'),
+         url('Fonts/fortis_ssi-webfont.ttf') format('truetype'),
+         url('Fonts/fortis_ssi-webfont.svg#FortisSSiRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+}
+a{
+	color:#060;
+}
+#header{
+	height:105px;
+	border-bottom:10px solid #239c4f;
+}
+#header-center{
+	margin:0px auto;
+	width:400px;
+	height:100px;
+	background:url("../Images/logo-1d-1.png") 0 0 no-repeat;
+}
+#navbar-container{
+	height:30px;
+}
+#navbar{
+	font-family: 'FortisSSiRegular', Arial, sans-serif;
+	text-transform:uppercase;
+	width:100%;
+	float:left;
+	margin:0;
+	padding:0;
+	border-bottom:1px solid #239c4f;
+}
+#navbar li{
+	float:left;
+	margin:0;
+	padding:0;
+	display:inline;
+	list-style:none;
+}
+#navbar a:link, #navbar a:visited{
+	float:left;
+	font-size:85%;
+	line-height:20px;
+	font-weight:bold;
+	margin:0 10px 0 10px;
+	text-decoration:none;
+	color:#000;
+}
+#navbar a.active:link, #navbar a.active:visited, #navbar a:hover{
+	border-bottom: 4px solid #239c4f;
+	padding-bottom:2px;
+	color:#239c4f;
+}
+#feeds{
+	float:right;
+	margin-top:-40px;
+	width:400px;
+	border-left:3px solid #239c4f;
+}
+.feed-header{
+	font-weight:bold;
+	font-size:85%;
+	text-align:center;
+	color:#fff;
+	border-bottom:1px solid #239c4f;
+	background-color:#239c4f;
+}
+#twitter{
+	border-bottom:3px solid #239C4F;
+	padding-bottom:5px;
+}
+#tweets .twittList{
+	margin:0;
+	padding:0;
+}
+#tweets .twittLI{
+	list-style:none;
+	margin:0;
+	border-bottom:dashed 1px #CAF8C9;
+	padding:3px;
+	clear:both;
+	height:55px;
+}
+#tweets .twittList span.time{
+	color:#777;
+	font-size:0.9em;
+}
+#tweets .juitterAvatar{
+	float:left;
+	border:solid 1px #D3EECA;
+	background:#fff;
+	margin-right:5px;
+	padding:2px;
+	width:48px;
+	height:48px;
+}
+#tweets .jRM{
+	float:right;
+	clear:both;
+}
+#wrap{
+	min-height:100%;
+}
+.primaryContainer{
+	padding-left:15px;
+}
+#footer{
+	position:relative;
+	margin-top:-35px;
+	height:35px;
+	clear:both;
+	padding-top:10px;
+	background-color:#239c4f;
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+	font-size:85%;
+	text-transform:uppercase;
+}
