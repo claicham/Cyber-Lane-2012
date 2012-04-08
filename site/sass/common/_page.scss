@@ -1,0 +1,49 @@
+// page
+
+.cl-header-wrap {
+  border-bottom: 1px solid #239c4f;
+}
+
+#cl-global-header {
+  position: relative;
+  z-index: 1000;
+  margin-bottom: 8px;
+  height: 105px;
+  border-bottom: 10px solid #239c4f;
+  
+  #header-center {
+  	text-align: center;
+  }
+}
+
+#cl-page-container {
+  width: 100%;
+}
+
+.cl-header,
+.cl-page {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  
+  .cl-col-wrapper {
+    clear: both;
+    margin: 0 -1%;
+  }
+  
+  .cl-content-wrapper {
+    width: 100%;
+    
+    @media only screen and (min-width: 1800px) {
+      width: 1600px;
+      margin: 0 auto;
+    }
+  }
+} 
+
+.cl-column {
+  word-break: break-word;
+  margin-bottom: 16px;
+  display: inline; // fix for IE double margin bug
+  float: left;
+}

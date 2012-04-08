@@ -1,0 +1,7 @@
+// Build col1, col2 ... .col12 classes
+
+@for $i from 1 through $ColCount {
+  .cl-col#{$i} {
+    @include columns($i);
+  }
+}

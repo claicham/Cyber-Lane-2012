@@ -1,0 +1,23 @@
+// misc
+
+// links
+
+@mixin linkSet ($color, $tag: a) {
+  #{$tag}:link,
+  #{$tag}:hover,
+  #{$tag}:focus,
+  #{$tag}:visited,
+  #{$tag}:active {
+    color: $color;
+  }
+}
+
+@mixin linkSetClass ($color, $tag: a) {
+  .#{$tag}:link,
+  .#{$tag}:hover,
+  .#{$tag}:focus,
+  .#{$tag}:visited,
+  .#{$tag}:active {
+    color: $color;
+  }
+}

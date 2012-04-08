@@ -1,0 +1,57 @@
+// feeds box
+
+#feeds {
+	//border-left:3px solid #239c4f;
+	margin-top: -34px;
+
+  .feed-header {
+  	font-weight:bold;
+  	font-size:85%;
+  	text-align:center;
+  	color:#fff;
+  	border-bottom:1px solid #239c4f;
+  	background-color:#239c4f;
+  }
+  
+  #twitter {
+  	border-bottom: 3px solid #239C4F;
+  	padding-bottom: 5px;
+  	
+  	.twittList {
+    	margin:0;
+    	padding:0;
+    }
+  }
+  
+  #tweets {
+  
+   .twittLI {
+    	list-style:none;
+    	margin:0;
+    	border-bottom:dashed 1px #CAF8C9;
+    	padding:3px;
+    	clear:both;
+    	height:55px;
+    }
+    
+    .twittList span.time {
+    	color:#777;
+    	font-size:0.9em;
+    }
+    
+    .juitterAvatar{
+    	float:left;
+    	border:solid 1px #D3EECA;
+    	background:#fff;
+    	margin-right:5px;
+    	padding:2px;
+    	width:48px;
+    	height:48px;
+    }
+    
+    .jRM{
+    	float:right;
+    	clear:both;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+// typography
+
+html {
+  font-size: $BaseFont;
+}
+
+body,
+form,
+input,
+select,
+textarea {
+  font-family: Arial, verdana, helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'FortisSSiRegular';
+    src: url('../fonts/fortis_ssi-webfont.eot');
+    src: url('../fonts/fortis_ssi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fortis_ssi-webfont.woff') format('woff'),
+         url('../fonts/fortis_ssi-webfont.ttf') format('truetype'),
+         url('../fonts/fortis_ssi-webfont.svg#FortisSSiRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+  @include fontSize(32px, 40px);
+  font-weight: bold;
+}
+
+h2 {
+  @include fontSize(24px, 32px);
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+h3 {
+  @include fontSize(18px, 24px);
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+p {
+  @include fontSize(14px, 16px);
+  margin-bottom: 16px;
+}
+
+table {
+  @include fontSize(14px, 16px);
+}
+
+form,
+select,
+input {
+  @include fontSize(14px, 16px);
+}
+
+textarea {
+  @include fontSize(14px, 16px);
+}

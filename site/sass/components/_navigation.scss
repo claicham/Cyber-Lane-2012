@@ -1,0 +1,37 @@
+// nav
+
+#cl-header {
+  
+  ul {
+    font-family: 'FortisSSiRegular', Arial, sans-serif;
+    text-transform: uppercase;
+  	width: 100%;
+  	float: left;
+  	margin: 0;
+  	padding: 0;
+  	
+  	li {
+    	float: left;
+    	margin: 0;
+    	padding: 0;
+    	display: inline;
+    	list-style: none;
+    	
+    	a:link,
+    	a:visited {
+      	float: left;
+      	@include fontSize(11px,20px);
+      	font-weight: bold;
+      	margin: 0 10px 0 10px;
+      	text-decoration: none;
+      	color: #000;
+      }
+      
+      a.active:link, a.active:visited, a:hover{
+      	border-bottom: 4px solid #239c4f;
+      	padding-bottom: 2px;
+      	color: #239c4f;
+      }
+    }
+  }
+}

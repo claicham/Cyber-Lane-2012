@@ -1,0 +1,134 @@
+// ddg mixin library
+
+// typography
+
+$FontSize: 14px !default;
+$BaseFont: $FontSize / 16px * 100% !default;
+
+@function remVal($pixels) {
+  @return $pixels / $FontSize * 1rem;
+}
+
+@mixin fontSize($pixelSize, $pixelLineHeight: $FontSize) {
+  font-size: $pixelSize; font-size: remVal($pixelSize);
+  line-height: $pixelLineHeight / $pixelSize;
+}
+
+@mixin fontSizeMargin($pixelSize, $pixelLineHeight: 1, $marginTop: 0px, $marginBottom: 0px) {
+  @include fontSize($pixelSize, $pixelLineHeight);
+  @include marginTopBottom($marginTop, $marginBottom);
+}
+
+@mixin margin($marginTop: null, $marginRight: null, $marginBottom: null, $marginLeft: null) {  
+  @if $marginLeft != null {
+    margin: $marginTop $marginRight $marginBottom $marginLeft; margin: remVal($marginTop) $marginRight remVal($marginBottom) $marginLeft;
+  } @else if $marginBottom != null {
+    margin: $marginTop $marginRight $marginBottom; margin: remVal($marginTop) $marginRight remVal($marginBottom);
+  } @else if $marginRight != null {
+    margin: $marginTop $marginRight; margin: remVal($marginTop) $marginRight;
+  } @else if $marginTop != null {
+    margin: $marginTop; margin: remVal($marginTop) $marginTop;
+  }
+}
+
+@mixin marginTop($margin) {
+  @if $margin != 0px {
+    margin-top: $margin; margin-top: remVal($margin);
+  } @else {
+    margin-top: 0;
+  }  
+}
+
+@mixin marginBottom($margin) {
+  @if $margin != 0px {
+    margin-bottom: $margin; margin-bottom: remVal($margin);
+  } @else {
+    margin-bottom: 0;
+  }  
+}
+
+@mixin marginRight($margin) {
+  @if $margin != 0px {
+    margin-right: $margin;
+  } @else {
+    margin-right: 0;
+  }  
+}
+
+@mixin marginLeft($margin) {
+  @if $margin != 0px {
+    margin-left: $margin;
+  } @else {
+    margin-left: 0;
+  }  
+}
+
+@mixin marginTopBottom($marginTop: 0px, $marginBottom: 0px) {
+  @if $marginTop != 0px {
+    margin-top: $marginTop; margin-top: remVal($marginTop);
+  } @else {
+    margin-top: 0;
+  }
+  @if $marginBottom != 0px {
+    margin-bottom: $marginBottom; margin-bottom: remVal($marginBottom);
+  } @else {
+    margin-bottom: 0;
+  }
+}
+
+@mixin padding($paddingTop: null, $paddingRight: null, $paddingBottom: null, $paddingLeft: null) {  
+  @if $paddingLeft != null {
+    padding: $paddingTop $paddingRight $paddingBottom $paddingLeft; padding: remVal($paddingTop) $paddingRight remVal($paddingBottom) $paddingLeft;
+  } @else if $paddingBottom != null {
+    padding: $paddingTop $paddingRight $paddingBottom; padding: remVal($paddingTop) $paddingRight remVal($paddingBottom);
+  } @else if $paddingRight != null {
+    padding: $paddingTop $paddingRight; padding: remVal($paddingTop) $paddingRight;
+  } @else if $paddingTop != null {
+    padding: $paddingTop; padding: remVal($paddingTop) $paddingTop;
+  }
+}
+
+@mixin paddingTop($padding) {
+  @if $padding != 0px {
+    padding-top: $padding; padding-top: remVal($padding);
+  } @else {
+    padding-top: 0;
+  }  
+}
+
+@mixin paddingBottom($padding) {
+  @if $padding != 0px {
+    padding-bottom: $padding; padding-bottom: remVal($padding);
+  } @else {
+    padding-bottom: 0;
+  }  
+}
+
+@mixin paddingRight($padding) {
+  @if $padding != 0px {
+    padding-right: $padding;
+  } @else {
+    padding-right: 0;
+  }  
+}
+
+@mixin paddingLeft($padding) {
+  @if $padding != 0px {
+    padding-left: $padding;
+  } @else {
+    padding-left: 0;
+  }  
+}
+
+@mixin paddingTopBottom($paddingTop: 0px, $paddingBottom: 0px) {
+  @if $paddingTop != 0px {
+    padding-top: $paddingTop; padding-top: remVal($paddingTop);
+  } @else {
+    padding-top: 0;
+  }
+  @if $paddingBottom != 0px {
+    padding-bottom: $paddingBottom; padding-bottom: remVal($paddingBottom);
+  } @else {
+    padding-bottom: 0;
+  }
+}

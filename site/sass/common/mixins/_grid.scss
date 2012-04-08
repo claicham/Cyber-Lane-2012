@@ -1,0 +1,15 @@
+// grid
+
+$ColCount: 10 !default;
+
+@mixin columns($numCols) {
+  $col: 10%;
+  $marginLeft: 1%;
+  $marginRight: 1%;
+  
+  $colWidth: $col * $numCols - 2%;
+  
+  margin: 0 $marginRight 1.231em $marginLeft;
+  width: $colWidth;
+}
+
